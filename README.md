@@ -18,15 +18,15 @@ You will also need to run **npm install** to get the right packages from the pac
 
 - run **node BamazonCustomer.js**
 
-	-  On start up, you'll see the products available for purchase:
+	-  On start up, "Select I am a Customer" to view Items for sell
 	<img width="644" alt="screenshot 2018-08-05 11 13 42" src="https://user-images.githubusercontent.com/35083911/43688582-2ac133c0-98b1-11e8-9106-74200e0d3397.png">
 
 
-	-  You can then purchase the items and it will tell you the total for your order:
-	![Example Customer 2](/images/customer02.png)
+	-  Items for sell will view, Then you will be able to select the Id of item you wnat to buy and how many.
+	<img width="761" alt="screenshot 2018-08-05 11 14 09" src="https://user-images.githubusercontent.com/35083911/43688604-7c6eaeb4-98b1-11e8-9491-dc2ed4270c70.png">
 
 	-  It will not process your order if you try to purchase too many:
-	![Example Customer 3](/images/customer03.png)
+	<img width="731" alt="screenshot 2018-08-05 11 21 35" src="https://user-images.githubusercontent.com/35083911/43688607-817ababa-98b1-11e8-837f-1c997e2f43e1.png">
 
 ## bamazonManager.js
 
