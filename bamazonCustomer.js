@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+// var manager = require("./bamazonManager");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -20,7 +21,7 @@ connection.connect(function(err) {
 
   console.log("-------------------------------------------"),
     console.log("                                           "),
-    console.log("         *** Welcome to BamaZOn ***         "),
+    console.log("         *** Welcome to BamaZOn ***        "),
     console.log("                                           "),
     console.log("-------------------------------------------");
   openBamazon();
@@ -40,7 +41,7 @@ function openBamazon() {
           break;
 
         case "I am a Manager":
-          managerBamazon();
+          // manager.managerBamazon();
           break;
       }
     });
@@ -120,12 +121,24 @@ function buyProducts() {
             ],
             function(fields) {
               console.log(
+                "                                                                          "
+              );
+              console.log(
+                "__________________________________________________________________________"
+              );
+              console.log(
+                "                                                                          "
+              );
+              console.log(
                 "Great! Your total is $" +
                   grandtotal.toFixed(2) +
                   ". Your item(s) will be shipped to you in 3-5 business days."
               );
               console.log(
                 "----------------------------------------------------------------------------------------------------"
+              );
+              console.log(
+                "                                                                          "
               );
             }
           );

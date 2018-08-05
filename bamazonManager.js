@@ -1,6 +1,5 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-var fs = require("fs");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -173,27 +172,29 @@ function addToInventory() {
         {
           type: "input",
           name: "id",
-          message: "What is the ID of item you want to add?"
+          message: "What is the ID of item you want to add?",
+          filter: Number
         },
         {
           type: "input",
           name: "qty",
-          message: "How much would you like to add?"
+          message: "How much would you like to add?",
+          filter: Number
         }
       ])
       .then(function(ans) {
-        var idSelected = ans.id;
-        var quantityAdding = ans.qty;
+        var idSelected = parseInt(ans.id);
+        var quantityAdding = parseInt(ans.qty);
+        var currentQty = parseInt(fields[idSelected].stock_quantity);
         connection.query(
           "UPDATE products SET ? WHERE ?",
           [
             {
-              stock_quantity: fields[idSelected].stock_quantity + quantityAdding
+              stock_quantity: currentQty + quantityAdding
             },
             { item_id: ans.id }
           ],
-          console.log("Updated!"),
-          console.log(fields[idSelected].stock_quantity)
+          console.log("Item " + idSelected + " Was Updated")
         );
         managerBamazon();
       });
@@ -229,18 +230,40 @@ function addNewItem() {
           message: "How many of this item do you want to stock?"
         }
       ])
-      .then(function(ans) {
-        var itemID = ans.id;
-        var itemName = ans.name;
-        var depAdd = ans.dep;
-        var sellPrice = ans.price;
-        var qtyAdd = ans.qty;
+      .then(function(input) {
+        var itemID = input.id;
+        var itemName = input.name;
+        var depAdd = input.dep;
+        var sellPrice = input.price;
+        var qtyAdd = input.qty;
+
         connection.query(
-          "INSERT INTO products(item_id,product_name,department_name,price,stock_quanty)",
-          "VALUES (?,?,?,?,?)",
-          [itemID, itemName, depAdd, sellPrice, qtyAdd],
-          console.log("Item Added!")
+          "INSERT INTO products(item_id,product_name,department_name,price,stock_quantity) VALUES (?,?,?,?,?);",
+          [itemID, itemName, depAdd, sellPrice, qtyAdd]
         );
+        if (err) console.log("Error: " + err);
+        else {
+          console.log(
+            "-----------------------------------------------------------------------------------------"
+          );
+          console.log(
+            "                                                                                         "
+          );
+          console.log("This item was added");
+          console.log(
+            itemID +
+              " | " +
+              itemName +
+              " | " +
+              depAdd +
+              " | " +
+              "$" +
+              sellPrice +
+              " | " +
+              qtyAdd
+          );
+          connection.end();
+        }
       });
   });
 }
