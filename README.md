@@ -19,7 +19,8 @@ You will also need to run **npm install** to get the right packages from the pac
 - run **node BamazonCustomer.js**
 
 	-  On start up, you'll see the products available for purchase:
-	![Example Customer 1](bamazonnodeapp/images/Screenshot2018-08-0511.13.42.png)
+	<img width="644" alt="screenshot 2018-08-05 11 13 42" src="https://user-images.githubusercontent.com/35083911/43688582-2ac133c0-98b1-11e8-9106-74200e0d3397.png">
+
 
 	-  You can then purchase the items and it will tell you the total for your order:
 	![Example Customer 2](/images/customer02.png)
