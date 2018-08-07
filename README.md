@@ -24,15 +24,13 @@
 - run **node BamazonManager.js**
 	-  Follow the prompts to "manage" your Bamazon store!
 	<img width="674" alt="screenshot 2018-08-05 11 24 31" src="https://user-images.githubusercontent.com/35083911/43751349-24483374-99c2-11e8-9514-ee0e9ff3cc4a.png">
-
-	-  You can view the products that are available to sell:
+-  You can view the products that are available to sell:
 <img width="600" alt="screenshot 2018-08-05 11 24 54" src="https://user-images.githubusercontent.com/35083911/43751360-303491dc-99c2-11e8-8538-6b8995d34ac3.png">
 -  You can view the products with low quantity (below 5):
 	<img width="693" alt="screenshot 2018-08-05 11 25 08" src="https://user-images.githubusercontent.com/35083911/43751370-3d00293a-99c2-11e8-865c-36e0335c45ad.png">
 	-  You can add product to your store:
 	<img width="636" alt="screenshot 2018-08-05 12 09 52" src="https://user-images.githubusercontent.com/35083911/43751375-42358512-99c2-11e8-9d6a-e604efe535bf.png">
-
-	-  You can add a new product to your store:
+-  You can add a new product to your store:
 	<img width="641" alt="screenshot 2018-08-05 12 15 36" src="https://user-images.githubusercontent.com/35083911/43751384-4899abb8-99c2-11e8-833b-c7e15d4810d2.png">
 
 
