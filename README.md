@@ -26,23 +26,29 @@ You will also need to run **npm install** to get the right packages from the pac
 	<img width="761" alt="screenshot 2018-08-05 11 14 09" src="https://user-images.githubusercontent.com/35083911/43688604-7c6eaeb4-98b1-11e8-9491-dc2ed4270c70.png">
 
 	-  It will not process your order if you try to purchase too many:
-	<img width="731" alt="screenshot 2018-08-05 11 21 35" src="https://user-images.githubusercontent.com/35083911/43688607-817ababa-98b1-11e8-837f-1c997e2f43e1.png">
+<img width="671" alt="screenshot 2018-08-06 21 39 10" src="https://user-images.githubusercontent.com/35083911/43751191-78a81976-99c1-11e8-862f-2194fa4560e2.png">
+
+	-  Once item is chosen and quantity is specified you will be prompted that your purchase was succesfull. Database will be updated.
+<img width="731" alt="screenshot 2018-08-05 11 21 35" src="https://user-images.githubusercontent.com/35083911/43751305-fa160be4-99c1-11e8-9242-83b900d6467e.png">
+
+
+
 
 ## bamazonManager.js
 
 - run **node BamazonManager.js**
 	-  Follow the prompts to "manage" your Bamazon store!
+	<img width="674" alt="screenshot 2018-08-05 11 24 31" src="https://user-images.githubusercontent.com/35083911/43751349-24483374-99c2-11e8-9514-ee0e9ff3cc4a.png">
 
 	-  You can view the products that are available to sell:
-	![Example Manager 1](/images/manager01.png)
+<img width="711" alt="screenshot 2018-08-05 11 24 54" src="https://user-images.githubusercontent.com/35083911/43751360-303491dc-99c2-11e8-8538-6b8995d34ac3.png">
 
 	-  You can view the products with low quantity (below 5):
-	![Example Manager 2](/images/manager02.png)
-
+	<img width="693" alt="screenshot 2018-08-05 11 25 08" src="https://user-images.githubusercontent.com/35083911/43751370-3d00293a-99c2-11e8-865c-36e0335c45ad.png">
 	-  You can add product to your store:
-	![Example Manager 3](/images/manager03.png)
+	<img width="636" alt="screenshot 2018-08-05 12 09 52" src="https://user-images.githubusercontent.com/35083911/43751375-42358512-99c2-11e8-9d6a-e604efe535bf.png">
 
 	-  You can add a new product to your store:
-	![Example Manager 4](/images/manager04.png)
+	<img width="641" alt="screenshot 2018-08-05 12 15 36" src="https://user-images.githubusercontent.com/35083911/43751384-4899abb8-99c2-11e8-833b-c7e15d4810d2.png">
 
 
